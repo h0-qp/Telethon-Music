@@ -22,7 +22,7 @@ from Zaid.status import *
 @is_admin
 async def _(e, perm):
     chat_id = e.chat_id
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n/join <Group Link/Username> if your Group is private then use !pjoin <Chat link>"
+    usage = "اوامر الانضمام\n\nالاوامر:\n\n/join <رابط المجموعة / يوزر المجموعة> اذا كانت مجموعتك خاصة ارسل هذا الامر !pjoin <رابط المجموعة>"
     if e.is_group:
         umm = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
@@ -31,7 +31,7 @@ async def _(e, perm):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Succesfully Joined if not joined Use !pjoin and your group link")
+                await event.edit("تم الانضمام بنجاح إذا لم ينضم الحساب المساعد فأرسل !pjoin ورابط مجموعتك")
             except Exception as e:
                 await event.edit(str(e))   
         else:

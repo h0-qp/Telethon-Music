@@ -4,8 +4,8 @@ from Config import Config
 
 
 btn =[
-    [Button.inline("Admin", data="admin"), Button.inline("Play", data="play")],
-    [Button.inline("Home", data="start")]]
+    [Button.inline("اوامر الادمن", data="admin"), Button.inline("اوامر التشغيل", data="play")],
+    [Button.inline("الصفحة الرئيسية", data="start")]]
 
 HELP_TEXT = "اهلا بك في قائمة الاوامر\n\nاختر من الازرار!"
 

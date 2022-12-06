@@ -128,8 +128,8 @@ async def _(event):
      await event.delete()
 
 btnn =[
-    [Button.url("sᴜᴘᴘᴏʀᴛ ⚙️", url=f"t.me/{Config.SUPPORT}"), Button.url("cʜᴀɴɴᴇʟ", url=f"t.me/{Config.CHANNEL}")],
-    [Button.inline("cʟᴏꜱᴇ 🗑️", data="cls")]]
+    [Button.url("الدعم ⚙️", url=f"t.me/{Config.SUPPORT}"), Button.url("القناة", url=f"t.me/{Config.CHANNEL}")],
+    [Button.inline("اغلاق القائمة 🗑️", data="cls")]]
 
 
 #play
@@ -240,11 +240,11 @@ async def vc_end(event, perm):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await event.reply("**Streaming Ended**")
+            await event.reply("**تم انهاء الاتصال**")
         except Exception as e:
-            await event.reply(f"**ERROR:** `{e}`")
+            await event.reply(f"**خطأ:** `{e}`")
     else:
-        await event.reply("**Ntg is Streaming**")
+        await event.reply("**لا يوجد اتصال جاري**")
 
 
 

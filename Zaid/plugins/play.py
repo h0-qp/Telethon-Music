@@ -151,7 +151,7 @@ async def play(event):
         or not replied
         and not title
     ):
-        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**Give Me Your Query Which You want to Play**\n\n **Example**: `/play Nira Ishq Bass boosted`", buttons=btnn)
+        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**اعطني شيء لتشغيله عبر هذا امر التشغيل مع اسم الاغنية**\n\n **مثال**: `/play Nira Ishq Bass boosted`", buttons=btnn)
     elif replied and not replied.audio and not replied.voice or not replied:
         botman = await event.reply("**🔄 جاري البحث... انتظر!**")
         query = event.text.split(maxsplit=1)[1]
@@ -273,7 +273,7 @@ async def vplay(event):
         or not replied
         and not title
     ):
-        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**Give Me Your Query Which You want to Stream**\n\n **Example**: `/vplay Nira Ishq Bass boosted`", buttons=btnn)
+        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**اعطني ماتريد تشغيله كفيديو في المحادثة الصوتية مع الامر**\n\n **مثال**: `/vplay Nira Ishq Bass boosted`", buttons=btnn)
     if replied and not replied.video and not replied.document:
         xnxx = await event.reply("**🔄 يتم البحث... انتظر!**")
         query = event.text.split(maxsplit=1)[1]

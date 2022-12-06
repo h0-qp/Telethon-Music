@@ -25,7 +25,7 @@ async def start(event):
              buttons=[
         [Button.url("➕ أضفني لمجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [Button.url("👨‍💻 كود البوت للمطورين*", "https://github.com/dyler2/Telethon-Music")],
-        [Button.url("🗣️ الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("📣 ᴜᴘᴅᴀᴛᴇꜱ", f"https://t.me/{Config.CHANNEL}")],
+        [Button.url("🗣️ الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("📣 التحديثات", f"https://t.me/{Config.CHANNEL}")],
         [Button.inline("المساعدة والاوامر", data="help")]])
        return
 
@@ -43,6 +43,6 @@ async def _(event):
        await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=[
         [Button.url("➕ أضفني لمجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [Button.url("👨‍💻 كود البوت للمطورين*", "https://github.com/dyler2/Telethon-Music")],
-        [Button.url("🗣️ الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("📣 ᴜᴘᴅᴀᴛᴇꜱ", f"https://t.me/{Config.CHANNEL}")],
+        [Button.url("🗣️ الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("📣 التحديثات", f"https://t.me/{Config.CHANNEL}")],
         [Button.inline("المساعدة والاوامر", data="help")]])
        return

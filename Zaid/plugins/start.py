@@ -23,7 +23,7 @@ async def start(event):
              Config.START_IMG,
              caption=PM_START_TEXT.format(event.sender.first_name), 
              buttons=[
-        [Button.url("➕ أضفني لمجموعتك", "https://t.me/v4sbot?startgroup=true")],
+        [Button.url("➕ أضفني لمجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [Button.url("👨‍💻 كود البوت للمطورين*", "https://github.com/dyler2/Telethon-Music")],
         [Button.url("🗣️ الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("📣 التحديثات", f"https://t.me/{Config.CHANNEL}")],
         [Button.inline("المساعدة والاوامر", data="help")]])
@@ -41,7 +41,7 @@ async def _(event):
         return
     if event.is_private:
        await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=[
-        [Button.url("➕ أضفني لمجموعتك", "https://t.me/v4sbot?startgroup=true")],
+        [Button.url("➕ أضفني لمجموعتك", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [Button.url("👨‍💻 كود البوت للمطورين*", "https://github.com/dyler2/Telethon-Music")],
         [Button.url("🗣️ الدعم", f"https://t.me/{Config.SUPPORT}"), Button.url("📣 التحديثات", f"https://t.me/{Config.CHANNEL}")],
         [Button.inline("المساعدة والاوامر", data="help")]])

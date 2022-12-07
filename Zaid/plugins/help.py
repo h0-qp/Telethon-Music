@@ -16,7 +16,7 @@ async def help(event):
         return
     if event.is_group:
        await event.reply("ارسل لي /help في الخاص لعرض قائمة الاوامر!", buttons=[
-       [Button.url("ارسال /help!", "t.me/{}?start=help".format(BOT_USERNAME))]])
+       [Button.url("ارسال /help!", "t.me/v4sbot?start=help")]])
        return
 
     await event.reply(HELP_TEXT, buttons=btn)

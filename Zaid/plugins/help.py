@@ -32,20 +32,3 @@ async def _(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
     await event.edit(HELP_TEXT, buttons=btn)
-
-@Zaid.on(events.NewMessage(pattern="[!?/]الاوامر"))
-async def helpr(event):
-    await event.reply("""
-✘ اوامر الادمنية التي يمكنهم استخدامها!
-
-‣ `?end` - لإنهاء التشغيل.
-‣ `?skip` - لتخطي الاغنية وتشغيل التي تليها.
-‣ `?pause` - لإيقاف التشغيل مؤقتا.
-‣ `?resume` - لإستكمال التشغيل.
-‣ `?leavevc` - لمغادرة البوت من المجموعة.
-‣ `?playlist` - لتشغيل بلاي لست المجموعة.
-
-✘ الاوامر المتاحة للأعضاء!
-
-‣ `?play` - لتشغيلاغنية بالرد على ملف صوتي او كتابةاسم الاغنية.
-‣ `?vplay` -  لتشغيل فيديو (لايعمل حاليا)."""

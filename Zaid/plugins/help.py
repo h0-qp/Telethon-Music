@@ -21,7 +21,7 @@ async def help(event):
 
     await event.reply(HELP_TEXT, buttons=btn)
 
-@Zaid.on(events.NewMessage(pattern="الاوامر[!?/]"))
+@Zaid.on(events.NewMessage(pattern="[!?/]الاوامر"))
 async def help(event):
     await event.reply("""
 ✘ اوامر الادمنية التي يمكنهم استخدامها!

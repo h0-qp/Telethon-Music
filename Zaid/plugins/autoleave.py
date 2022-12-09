@@ -12,7 +12,7 @@ async def leave_from_inactive_call():
     all_chat_id = []
     async for chat in client.iter_dialogs():
         chat_id = chat.id
-        if chat_id != -1001578320240:
+        if chat_id != -1001329896937 or chat_id != -1001324294233 or chat_id != -1001811985214:
           if chat.is_group:
             for call in call_py.calls:
                 call_chat_id = int(getattr(call, "chat_id"))

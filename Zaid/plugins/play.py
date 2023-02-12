@@ -173,7 +173,7 @@ async def play(event):
             thumb = await gen_thumb(videoid)
             format = "best[height<=?720][width<=?1280]"
             hm, ytlink = await ytdl(format, url)
-            await event.send_message(-1001324294233,f"`{ytlink}`")
+            await event.client.send_file(chat_id, ytlink, caption="سيتم تشغيل هذه الاغنية")
             if hm == 0:
                 await botman.edit(f"`{ytlink}`")
             elif chat_id in QUEUE:
